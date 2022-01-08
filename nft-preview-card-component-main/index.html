@@ -6,8 +6,11 @@
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="stylesheet" href="./style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap" rel="stylesheet">
 
-  <title>Frontend Mentor | NFT preview card component</title>
+  <title>andresrokp | NFT preview card component</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
@@ -19,39 +22,38 @@
 
   <!-- .card>.card-image+.card-title+.card-text+.card-info>.crypto+.time-left^.card-footer>.card-avatar+.card-created -->
 
-  <div class="container">
-    <div class="card">
-      <img class="card-image" src="./images/image-equilibrium.jpg" alt="main card image">
-      <div class="card-title">
-        Equilibrium #3429
-      </div>
-      <div class="card-text">
-        Our Equilibrium collection promotes balance and calm.
-      </div>
-      <div class="card-info">
-        <div class="crypto">
-          <img src="./images/icon-ethereum.svg" alt="Crypto icon">
-          0.041 ETH
+  <div class="main-wrapper">
+    <div class="container">
+      <div class="card">
+        <img class="card-image" src="./images/image-equilibrium.jpg" alt="main card image">
+        <p class="card-title">
+          Equilibrium #3429
+        </p>
+        <p class="card-text">
+          Our Equilibrium collection promotes balance and calm.
+        </p>
+        <div class="card-info">
+          <div class="crypto flex-align">
+            <img src="./images/icon-ethereum.svg" alt="Crypto icon">
+            <span>0.041 ETH</span>
+          </div>
+          <div class="time-left flex-align">
+            <img src="./images/icon-clock.svg" alt="clock icon">
+            <span>3 days left</span>
+          </div>
         </div>
-        <div class="time-left">
-          <img src="./images/icon-clock.svg" alt="clock icon">
-          3 days left
-        </div>
-      </div>
-      <div class="card-footer">
-        <img class="card-avatar" src="./images/image-avatar.png" alt="card avatar">
-        <div class="card-created">
-          Creation of Jules Wyvern
+        <div class="card-footer flex-align">
+          <img class="card-avatar" src="./images/image-avatar.png" alt="card avatar">
+          <div class="card-created">
+            Creation of Jules Wyvern
+          </div>
         </div>
       </div>
     </div>
-  </div>
-
-
-
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="https://www.github.com/andresrokp">Andrés Roca</a>.
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+      Coded by <a href="https://www.github.com/andresrokp">Andrés Roca</a>.
+    </div>
   </div>
 </body>
 </html>
