@@ -1,14 +1,43 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 div {
-        border: 1px solid red;
+    border: 1px solid red;
 }
 
 .card{
     width: 350px;
     height: 600px;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .card-image{
     width: 300px;
     height: 300px;
+}
+
+
+
+.card-info{
+    display: flex;
+    justify-content: space-between;
+}
+
+.card-footer{
+    display: flex;
+    height: 60px;
+    align-items: center;
+}
+.card-avatar{
+    width: 30px;
+    height: 30px;
+    border: 2px solid white;
+    border-radius: 50%;
 }
 
